@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156437372-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-156437372-4');
+	</script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<title> 1922掃描器 </title>
+	<link rel="manifest" href="manifest.json?ts=<?php echo time(); ?>">
+	<meta property="og:title" content="1922掃描器" />
+	<meta property="og:description" content="長輩的最愛, IOS/Android雙系統都適用, ”嘿Siri” 1922 嘛ㄟ通"/>
+	<meta property="og:image" content="https://poku1010.github.com/1922/images/fb_img.png" />
+	<meta property="og:url" content="https://poku1010.github.com/1922/" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@poku1010" />
+	<meta name="twitter:title" content="1922掃描器" />
+	<meta name="twitter:description" content="長輩的最愛, IOS/Android雙系統都適用, ”嘿Siri” 1922 嘛ㄟ通" />
+	<meta name="twitter:image" content="https://poku1010.github.com/1922/images/fb_img.png" />
+	<meta name="twitter:url" content="https://poku1010.github.com/1922/" />
+
+	<meta itemprop="name" content="1922掃描器">
+	<meta itemprop="description" content="長輩的最愛, IOS/Android雙系統都適用, ”嘿Siri” 1922 嘛ㄟ通">
+	<meta itemprop="image" content="https://poku1010.github.com/1922/images/fb_img.png">
+
+	<meta name="description" content="長輩的最愛, IOS/Android雙系統都適用, ”嘿Siri” 1922 嘛ㄟ通">
+	<meta name="author" content="Poku">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+
+	<link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+
+	<meta name="theme-color" content="#70ad47">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#70ad47">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="1922掃描器">
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="msapplication-starturl" content="/">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Fonts from Google Fonts -->
+	<link href='//fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+		
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+#loading-indicator {
+	background: url("images/spin.gif") no-repeat scroll center center #FFF;
+	position: fixed;
+	height: 100%; 
+	width: 100%;
+	opacity: 0.8;
+	z-index: 99999;
+}
+</style>
+<body>
+	<div class="topnav">
+		<!-- <a href="javascript:closeWindows();">關閉視窗</a> -->
+		<a id="fb_page_uri" 
+			href="#facebook">
+			FB粉絲團
+		</a>
+		<a href="javascript:line_share();">
+			LINE分享</a>
+		<a href="javascript:refresh('故障排除');">故障排除</a>
+		<a href="javascript:refresh('重新整理');">重新整理</a>
+	</div>
+
+	<div id="loading-indicator" style="display:none;" ></div>
+	<div id="reader"></div>
+	<div class="" id="scanner_block" style="display: block;margin-top: -5px;">
+		<div class="ss-scanner-tip row" id="tip_inapp"> 
+			<div class="col-xs-12 title">
+				<span>網址就是掃描器</span>
+				<span>poku1010.github.com/1922</span>
+			</div>
+		</div>
+
+		<div class="ss-scanner-tip row" id="tip_scanner"> 
+			<div class="col-xs-12 title">
+				<span>實聯制掃碼</span>
+				<img src="images/ui_qrcode.png" />
+			</div>
+			<div class="col-xs-12 desp">若無法掃描，請嘗試其它掃碼 APP</div>
+		</div>
+
+		<div class="container">
+			<a href="#" id="ss-mesg" 
+				class="ss-mesg-block" style="display: none;">
+				<div class="ss-mesg">
+					<div class="context col-xs-12">
+						<div class="c-title m-0"> 
+							實聯制掃瞄器無法啟動，可能是您沒有同意使用，或是您的裝置不支援此功能。
+							請點選下方按鈕並拍下簡訊實聯制QR Code。 
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="fileinput input-group " data-provides="fileinput">
+							<button class="input-group-addon btn-file">
+								<span class="fileinput-new">按我拍照 QR Code</span>
+								<input id="qr-input-file" accept="image/*" type="file" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<div id="ss-android-camera-tip" class="ss-android-camera-tip-block" style="display: none;">
+				<div class="ss-android-camera-tip">
+					<div class="context col-xs-12">
+						<div class="c-title m-0"> Android 用戶限定 </div>
+					</div>
+					<a href="javascript:href_ga('https://youtu.be/TPbwHdAZb4w', 'Android 權限影片');">
+						<div class="context col-xs-12">
+							<div class="c-round m-0">
+								<div class="col-xs-10 c-round-desp">
+									開啟權限教學影片 30 秒
+								</div>
+								<div class="col-xs-2" style="padding-right: 1vw;padding-left: 0px;">
+									<img src="images/touch.png" style="height: 9vw;" />
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<a href="javascript:href_ga('https://poku1010.github.com/1922/?openExternalBrowser=1', '桌面捷徑');" id="ss-ios-tip-one" 
+				class="ss-ios-tip-one-block" style="display: block;">
+				<div class="ss-ios-tip-one">
+					<div class="context col-xs-9">
+						<div class="c-title m-0">
+							立即掃描條碼<br>建立桌面捷徑
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<img src="images/touch.png" style="float:right;height: 20vw;">
+					</div>
+				</div>
+			</a>
+			
+			<div id="ss-ios-tip-two" class="ss-ios-tip-two-block" style="display: block;">
+				<div class="ss-ios-tip-two">
+					<a href="#" >
+						<div class="context col-xs-12">
+							<div class="c-title m-0"> "嘿 Siri" 1922 <br>語音捷徑設定教學 </div>
+						</div>
+					</a>
+					<a href="javascript:href_ga('https://lihi.tv/yeUOR', 'iOS 語音捷徑影片');" >
+						<div class="context col-xs-12">	
+							<div class="c-round m-0" style="margin-top: 20px;padding: 2vw" > 
+								影片教學 30 秒
+								<img src="images/touch.png" 
+									style="float:right;height: 9vw;width: auto;margin-right: 1rem;" /> 
+							</div>
+						</div>
+					</a>
+					<a href="javascript:href_ga('shortcuts://create-shortcut','iOS 語音設定捷徑');" >
+						<div class="context col-xs-12">
+							<div class="c-round m-0" style="margin-top: 20px;padding: 2vw"> 
+								開始設定 Siri 
+								<img src="images/touch.png" 
+									style="float:right;height: 9vw;width: auto;margin-right: 1rem;" /> 
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div id="reader_results" style="visibility: hidden;width: 300px;word-break: break-all;"></div>
+		</div>
+	</div>
+
+	<div class="container w-100" id="scan_result_block" style="display: none;">
+		<a href="javascript:alert('開發中');" id="ss-sms" class="ss-sms-block" style="display: none;">
+			<div class="title">
+				<div class="col-xs-6 context-left"> 簡訊 <br >收件人： </div>
+				<div class="col-xs-6 context-right"> 1922 </div>
+			</div>
+			<div class="ss-sms">
+				<div class="context col-xs-8">
+					<div class="c-title m-0"> 場所代碼：</div>
+					<div class="c-content m-0" id="smsto_val"> 2070 3352 9433 928 </div>
+					<div class="c-desp m-0"> 本次實聯簡訊 </div>
+					<div class="c-desp m-0"> 限防疫目的使用。 </div>
+				</div>
+				<span class="icon col-xs-4">
+					繼續<br>前往
+				</span>
+			</div>
+		</a>
+
+		<a href="javascript:alert('開發中');" id="ss-red-proceed" 
+			class="ss-red-proceed-block" style="display: none;">
+			<div class="title">
+				<div class="context"> 不是1922條碼 </div>
+			</div>
+			<div class="ss-red-proceed">
+				<div class="context col-xs-8">
+					<div class="c-title m-0"> 條碼內容： </div>
+					<div class="c-desp m-0" id="ss-red-proceed-qrcode-desp"> 
+						https://app2.family.com.tw/home/EntryRecord?store=017975 </div>
+				</div>
+				<span class="icon col-xs-4">
+					繼續<br>前往
+				</span>
+			</div>
+		</a>
+
+		<a href="javascript:refresh('重新掃描');" id="ss-refresh" 
+			class="ss-refresh-block" style="display: block;">
+			<div class="ss-refresh">
+				<div class="context col-xs-8">
+					<div class="c-title m-0"> 重新掃描 </div>
+				</div>
+				<span class="icon col-xs-4">
+					<img src="images/icons/scan.png" style="height: 18vw;">
+				</span>
+			</div>
+		</a>
+
+		<a href="javascript:add_app();" id="ss-add-app" 
+			class="ss-add-app-block" style="display: block;">
+			<div class="ss-add-app">
+				<div class="context col-xs-8">
+					<div class="c-title m-0"> 建立桌面捷徑 </div>
+				</div>
+				<span class="icon col-xs-4">
+					<i class="fa fa-upload" aria-hidden="true"></i>
+				</span>
+			</div>
+		</a>
+	</div>
+	<div class="container">
+		<div class="ss-footer"></div>
+		<div class="ss-our-brand"> 1922網址掃描器 </div>
+	</div>
+
+	<!--IOS-->
+	<div class="ios-prompt-block" id="ios-prompt-block">
+		<div class="ios-prompt-tip"> 加入到桌面當捷徑 </div>
+		<div class="ios-prompt-context row">
+			<div class="col-xs-3" style="padding:0px;">
+				<img src="images/icons/favicon-96x96.png" style="height: 15vw;margin-top: -1vw;">
+			</div>
+			<div class="col-xs-9" style="padding:0px;">
+				<p style="line-height: 4vw;font-size: 4vw;text-align: left;padding-top: 2vw;"> 
+					請點擊 
+					<img src="images/ios/share.svg" style="height: 10vw;margin-top: -1vw;"> 
+					後選擇「加入主畫面」
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<a href="javascript:alert('請至Safari瀏覽器開啟網址掃描器');" class="ios-at-fb-block" id="ios-at-fb-block">
+		<div class="ios-at-fb-tip"> 加入到桌面當捷徑 </div>
+		<div class="ios-at-fb-context row">
+			<div class="col-xs-3" style="padding:0px;">
+				<img src="images/icons/favicon-96x96.png" style="height: 18vw;width: auto;margin-top: -1vw;padding: 1vw;">
+			</div>
+			<div class="col-xs-9" style="padding:0px;">
+				<p style="line-height: 8vw;font-size: 6vw;text-align: left;"> 
+					請至Safari瀏覽器開啟網址掃描器設定捷徑 </p>
+			</div>
+		</div>
+	</a>
+
+	<a href="javascript:add_app();" class="android-prompt-block" id="android-prompt-block">
+		<div class="android-prompt-tip"> 加入到桌面當捷徑 </div>
+		<div class="android-prompt-context row">
+			<div class="col-xs-3" style="padding:0px;">
+				<img src="images/icons/favicon-96x96.png" style="height: 14vw;width: auto;margin-top: -1vw;padding: 1vw;">
+			</div>
+			<div class="col-xs-9" style="padding:0px;">
+				<p style="line-height: 12vw;font-size: 6vw;text-align: left;"> 
+					點我安裝桌面捷徑 </p>
+			</div>
+		</div>
+	</a>
+
+	<div class="ios-without-safari-block" id="ios-without-safari-block">
+		<a href="shortcuts://create-shortcut">
+			<div class="without-safari-tip"> 設定 Siri 1922 捷徑 </div>
+		</a>
+	</div>
+
+	<script type="text/javascript">
+		function line_share(){
+			gtag('event', 'click', {
+				'event_category': 'LINE分享',
+				'event_label': '',
+				'value': 1
+			});
+			fbq('trackCustom', 'click', {
+				'event_category': 'LINE分享',
+				'event_label': '',
+				'value': 1,
+				'currency': "TWD"
+			});
+			_etmc.push(["trackEvent", { "name" : "LINE分享" }]);
+
+			$line_share_text = "https://line.me/R/share?text="+
+				"在外停留越久，感染風險愈高!"+
+				"【幫幫長輩省點時間】 %0D%0A"+
+				"%23網址就是掃描器 %0D%0A"+
+				"%23存在桌面當捷徑 %0D%0A"+
+				"%23IOS/Android 都適用 %0D%0A%0D%0A https://poku1010.github.com/1922/"
+			;
+			location.href = $line_share_text;
+		}	//end function
+
+		window.resultContainer = document.getElementById('reader_results');
+		window.lastResult, window.countResults = 0;
+
+		function htmlLogger(mesg) {
+			if (mesg !== window.lastResult) {
+				++window.countResults;
+				window.lastResult = mesg;
+				window.resultContainer.innerHTML 
+					+= `<div>[${window.countResults}] - ${mesg}</div>`;
+			}
+		}	//end function
+
+		// Detects if device is on iOS 
+		const isIos = () => {
+			const userAgent = window.navigator.userAgent.toLowerCase();
+			return /iphone|ipad|ipod|mac/.test( userAgent );
+		}
+		const isAndroid = () => {
+			const userAgent = window.navigator.userAgent.toLowerCase();
+			return /android/.test( userAgent );
+		}
+		const isLine = () => {
+			const userAgent = window.navigator.userAgent.toLowerCase();
+			return /line/.test( userAgent );
+		}
+		const isFb = () => {
+			const userAgent = window.navigator.userAgent.toLowerCase();
+			return /fb/.test( userAgent );
+		}
+		// Detects if device is in standalone mode
+		const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker
+				.register("sw.js")
+				.then(function(){
+					console.log('Service Worker 註冊成功');
+					htmlLogger('Service Worker 註冊成功');
+				}).catch(function(error) {
+					console.log('Service worker 註冊失敗:', error);
+					htmlLogger(`Service worker 註冊失敗: ${error}`);
+				});
+		} else {
+			console.log('瀏覽器不支援 serviceWorker');
+		}	//end if
+
+		var deferredPrompt;
+		window.addEventListener('beforeinstallprompt', function(e) {
+			console.log('beforeinstallprompt Event fired');
+			htmlLogger(`beforeinstallprompt Event fired`);
+			e.preventDefault();
+
+			// Stash the event so it can be triggered later.
+			deferredPrompt = e;
+			return false;
+		});
+
+		function refresh(event_name){
+			$('#loading-indicator').show();
+			gtag('event', 'click', {
+				'event_category': event_name,
+				'event_label': '',
+				'value': 1
+			});
+			fbq('trackCustom', 'click', {
+				'event_category': event_name,
+				'event_label': '',
+				'value': 1,
+				'currency': "TWD"
+			});
+			_etmc.push(["trackEvent", { "name" : event_name }]);
+
+			window.location.reload();
+		}	//end function
+
+		function showIosInstall() {
+			let iosPrompt = document.querySelector(".ios-prompt-block");
+			iosPrompt.style.display = "block";
+			// iosPrompt.addEventListener("click", () => {
+			// 	iosPrompt.style.display = "none";
+			// });
+		}	//end function
+
+		function add_app(){
+			gtag('event', 'click', {
+				'event_category': '桌面捷徑',
+				'event_label': '',
+				'value': 1
+			});
+			fbq('trackCustom', 'click', {
+				'event_category': '桌面捷徑',
+				'event_label': '',
+				'value': 1,
+				'currency': "TWD"
+			});
+			_etmc.push(["trackEvent", { "name" : "桌面捷徑" }]);
+
+			// Checks if should display install popup notification:
+			if (isIos() && !isInStandaloneMode()) {
+				// this.setState({ showInstallMessage: true });
+				showIosInstall();
+			} else {
+				console.log(deferredPrompt);
+				htmlLogger(JSON.stringify(deferredPrompt));
+				if(deferredPrompt !== undefined) {
+					deferredPrompt.prompt();
+
+					deferredPrompt.userChoice.then(function(choiceResult) {
+						console.log(choiceResult.outcome);
+						htmlLogger(`${choiceResult.outcome}`);
+						if(choiceResult.outcome == 'dismissed') {
+							console.log('User cancelled home screen install');
+							htmlLogger(`User cancelled home screen install`);
+						} else {
+							console.log('User added to home screen');
+							htmlLogger(`User added to home screen`);
+							deferredPrompt = undefined;
+						}	//end if
+					});
+				} else {
+					alert('捷徑已經安裝到桌面');
+				}	//end if
+			}	//end if
+		}	//end function
+	</script>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- <script src="//unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script> -->
+	<script src="//github.com/mebjas/html5-qrcode/releases/download/V2.0.3/html5-qrcode.min.js"></script>
+	<script type="text/javascript">
+		function error_handler(error_msg, type){
+			console.log(error_msg);
+			console.log(type);
+		}	//end function
+
+		function loc_code_parser(qrCodeMessage){
+			var sms_loc_code = ''
+			sms_loc_code = qrCodeMessage.toLowerCase();
+			sms_loc_code = sms_loc_code.replace("：", ":");
+			sms_loc_code = sms_loc_code.split(':');
+			sms_loc_code = sms_loc_code[sms_loc_code.length-1];
+			sms_loc_code = sms_loc_code.replace(/ /g,'');
+			ret = '';
+			for(i=0, len=sms_loc_code.length; i<len; i+=1) {
+				if( Number.isInteger( parseInt(sms_loc_code[i]) ) ){
+					ret = ret+sms_loc_code[i];
+				} else {
+					break;
+				}	//end if
+			}	//end for
+			sms_loc_code = ret;
+			sms_loc_code = sms_loc_code.replace(/(.{4})/g,"$1 ")
+
+			return sms_loc_code;
+		}	//end function
+
+		function onScanCompleted(qrCodeMessage) {
+			gtag('event', 'scan', {
+				'event_category': 'scan_success',
+				'event_label': qrCodeMessage,
+				'value': 1
+			});
+			fbq('trackCustom', 'scan', {
+				'event_category': 'scan_success',
+				'event_label': qrCodeMessage,
+				'value': 1,
+				'currency': "TWD"
+			});
+			_etmc.push(["trackEvent", { "name" : "scan_success", "content" : qrCodeMessage }]);
+
+			if( isAndroid() ){
+				fbq('trackCustom', 'scan', {
+					'event_category': 'scan_success_android',
+					'event_label': qrCodeMessage,
+					'value': 1,
+					'currency': "TWD"
+				});
+				_etmc.push(["trackEvent", { "name" : "scan_success_android", "content" : qrCodeMessage }]);
+			}	//end if
+
+			if( isIos() ){
+				fbq('trackCustom', 'scan', {
+					'event_category': 'scan_success_ios',
+					'event_label': qrCodeMessage,
+					'value': 1,
+					'currency': "TWD"
+				});
+				_etmc.push(["trackEvent", { "name" : "scan_success_ios", "content" : qrCodeMessage }]);
+			}	//end if
+
+			var redirect_uri = qrCodeMessage;
+			var sms_loc_code = '';
+			
+			qrCodeMessage = qrCodeMessage.toLowerCase();
+			$('#scanner_block').hide();
+			$('#scan_result_block').show();
+			if( qrCodeMessage.includes("smsto:1922:") ){
+				redirect_uri = qrCodeMessage.replace("smsto:1922:", window.sms_uri);
+				sms_loc_code = loc_code_parser(qrCodeMessage);
+				$('#smsto_val').html(sms_loc_code);
+				$('#ss-sms').show();
+				$('#ss-sms').attr('href', redirect_uri);
+
+				location.href = redirect_uri;
+				$('#ss-sms').hide();
+			} else {
+				$('#ss-red-proceed').show();
+				$('#ss-red-proceed').attr('href', redirect_uri);
+				$('#ss-red-proceed-qrcode-desp').html(redirect_uri);
+			}	//end if
+		}	//end if
+
+		function href_ga(uri, event_name) {
+			gtag('event', 'click', {
+				'event_category': event_name,
+				'event_label': uri,
+				'value': 1
+			});
+			fbq('trackCustom', 'click', {
+				'event_category': event_name,
+				'event_label': uri,
+				'value': 1,
+				'currency': "TWD"
+			});
+			_etmc.push(["trackEvent", { "name" : event_name }]);
+
+			window.location.href = uri;
+		}	//end function
+
+		function closeWindows() {
+			// var Browser = navigator.appName;
+			// var indexB = Browser.indexOf('Explorer');
+
+			// if (indexB > 0) {
+			// 	var indexV = navigator.userAgent.indexOf('MSIE') + 5;
+			// 	var Version = navigator.userAgent.substring(indexV, indexV + 1);
+
+			// 	if (Version >= 7) {
+			// 		window.open('', '_self', '');
+			// 		window.close();
+			// 	} else if (Version == 6) {
+			// 		window.opener = null;
+			// 		window.close();
+			// 	} else {
+			// 		window.opener = '';
+			// 		window.close();
+			// 	}	//end if
+			// } else {
+			// 	window.close();
+			// }	//end if
+			window.open('', '_self', ''); window.close();
+		}	//end function
+
+		$(document).ready(function() {
+			htmlLogger(window.navigator.userAgent.toLowerCase());
+			console.log(window.navigator.userAgent.toLowerCase());
+
+			if( isLine() || isFb() ){
+				$('#tip_inapp').show();
+			} else {
+				$('#tip_scanner').show();
+			}	//end if
+
+			if( isLine() ){
+				$('.ss-add-app-block').hide();
+				if( isIos() ){
+					// location.assign("googlechrome://poku1010.github.com/1922/");
+					// location.assign("ftp://52.69.220.22/pub/bridge.html");
+					if( isLine() ){
+						$('#ss-ios-tip-one').show();
+						$('#ss-ios-tip-two').show();
+						$('#ss-refresh-scanner').hide();
+					}	//end if
+
+					if( isFb() ){
+						$('#ss-ios-tip-two').show();
+						$('#ss-refresh-scanner').hide();
+					}	//end if
+
+					// location.assign("https://poku1010.github.com/1922/?openExternalBrowser=1");
+					// $('#ios-without-safari-block').show();
+				} else {
+					location.assign("intent://poku1010.github.com/1922#Intent;scheme=https;package=com.android.chrome;end");
+				}	//end if
+			} else {
+				if( isIos() && !isInStandaloneMode() ){
+					showIosInstall();
+					$('.ss-add-app-block').hide();
+				}	//end if
+
+				if( isIos() ){
+					$('#ss-ios-tip-one').hide();
+					$('#fb_page_uri').attr('href','fb://page/?id=109227438014784');
+				}	//end if
+
+				if( isAndroid() ){
+					$('.ss-add-app-block').hide();
+					$('#ss-ios-tip-one').hide();
+					$('#ss-ios-tip-two').hide();
+					$('#android-prompt-block').show();
+					$('#fb_page_uri').attr('href','fb://page/109227438014784');
+				}	//end if
+
+				if( isAndroid() && isFb() ){
+					location.assign("intent://poku1010.github.com/1922#Intent;scheme=https;package=com.android.chrome;end");
+				}	//end if
+
+				if( isIos() && isFb() ){
+					$('#ss-ios-tip-one').hide();
+					$('#ios-at-fb-block').show();
+					$('#ios-prompt-block').hide();
+				}	//end if
+
+				window.sms_uri = '';
+				if ( isIos() ) {
+					window.sms_uri = 'sms:1922&body=';
+				} else if( isAndroid() ) {
+					window.sms_uri = 'sms:1922?body=';
+				} else {
+					window.sms_uri = 'smsto:1922:';
+				}	//end if
+
+				const html5QrCode = new Html5Qrcode("reader");
+				html5QrCode.start(
+					{ facingMode: "environment" },
+					{ fps: 10 },
+					qrCodeMessage => {
+						gtag('event', 'scan', {
+							'event_category': 'camera_success',
+							'event_label': qrCodeMessage,
+							'value': 1
+						});
+						fbq('trackCustom', 'scan', {
+							'event_category': 'camera_success',
+							'event_label': qrCodeMessage,
+							'value': 1,
+							'currency': "TWD"
+						});
+						_etmc.push(["trackEvent", { "name" : "camera_success", "content" : qrCodeMessage }]);
+
+						if( isAndroid() ){
+							fbq('trackCustom', 'scan', {
+								'event_category': 'camera_success_android',
+								'event_label': qrCodeMessage,
+								'value': 1,
+								'currency': "TWD"
+							});
+							_etmc.push([
+								"trackEvent", 
+								{ "name" : "camera_success_android", "content" : qrCodeMessage }
+							]);
+						}	//end if
+
+						if( isIos() ){
+							fbq('trackCustom', 'scan', {
+								'event_category': 'camera_success_ios',
+								'event_label': qrCodeMessage,
+								'value': 1,
+								'currency': "TWD"
+							});
+							_etmc.push([
+								"trackEvent", 
+								{ "name" : "camera_success_ios", "content" : qrCodeMessage }
+							]);
+						}	//end if
+
+						onScanCompleted(qrCodeMessage);
+
+						html5QrCode.stop().then(ignore => {
+							// QR Code scanning is stopped.
+						}).catch(err => {
+							// Stop failed, handle it.
+						});
+					},
+					errorMessage => {
+						// parse error, ideally ignore it. For example:
+						// console.log(`QR Code no longer in front of camera.`);
+					})
+				.catch(err => {
+					gtag('event', 'scan', {
+						'event_category': 'camera_failed',
+						'event_label': err,
+						'value': -1
+					});
+					fbq('trackCustom', 'scan', {
+						'event_category': 'camera_failed',
+						'event_label': err,
+						'value': 0,
+						'currency': "TWD"
+					});
+					_etmc.push(["trackEvent", { "name" : "camera_failed", "content" : err }]);
+
+					if( isAndroid() ){
+						$('#ss-android-camera-tip').show();
+						
+						fbq('trackCustom', 'scan', {
+							'event_category': 'camera_failed_android',
+							'event_label': err,
+							'value': 0,
+							'currency': "TWD"
+						});
+						_etmc.push(["trackEvent", { "name" : "camera_failed_android", "content" : err }]);
+					}	//end if
+
+					if( isIos() ){
+						fbq('trackCustom', 'scan', {
+							'event_category': 'camera_failed_ios',
+							'event_label': err,
+							'value': 0,
+							'currency': "TWD"
+						});
+						_etmc.push(["trackEvent", { "name" : "camera_failed_ios", "content" : err }]);
+					}	//end if
+
+					error_handler(err, 'qrcode scanner');
+					$('#ss-mesg').show();
+
+					// File based scanning
+					const fileinput = document.getElementById('qr-input-file');
+					fileinput.addEventListener('change', e => {
+						if (e.target.files.length == 0) {
+							// No file selected, ignore 
+							return;
+						}	//end if
+
+						const imageFile = e.target.files[0];
+						// Scan QR Code
+						html5QrCode.scanFile(imageFile, true)
+						.then(qrCodeMessage => {
+							gtag('event', 'scan', {
+								'event_category': 'photo_success',
+								'event_label': qrCodeMessage,
+								'value': 1
+							});
+							_etmc.push(["trackEvent", { "name" : "photo_success", "content" : qrCodeMessage }]);
+
+							if( isAndroid() ){
+								fbq('trackCustom', 'scan', {
+									'event_category': 'photo_success_android',
+									'event_label': qrCodeMessage,
+									'value': 1,
+									'currency': "TWD"
+								});
+								_etmc.push([
+									"trackEvent", 
+									{ "name" : "photo_success_android", "content" : qrCodeMessage }
+								]);
+							}	//end if
+
+							if( isIos() ){
+								fbq('trackCustom', 'scan', {
+									'event_category': 'photo_success_ios',
+									'event_label': qrCodeMessage,
+									'value': 1,
+									'currency': "TWD"
+								});
+								_etmc.push([
+									"trackEvent", 
+									{ "name" : "photo_success_ios", "content" : qrCodeMessage }
+								]);
+							}	//end if
+
+							// success, use qrCodeMessage
+							$('#reader').hide();
+							console.log(qrCodeMessage);
+							onScanCompleted(qrCodeMessage);
+						})
+						.catch(err => {
+							error_handler(err, 'fileinput');
+
+							gtag('event', 'scan', {
+								'event_category': 'photo_failed',
+								'event_label': err,
+								'value': -1
+							});
+							fbq('trackCustom', 'scan', {
+								'event_category': 'photo_failed',
+								'event_label': err,
+								'value': 0,
+								'currency': "TWD"
+							});
+							_etmc.push([
+								"trackEvent", 
+								{ "name" : "photo_failed", "content" : err }
+							]);
+
+							if( isAndroid() ){
+								fbq('trackCustom', 'scan', {
+									'event_category': 'photo_failed_android',
+									'event_label': err,
+									'value': 0,
+									'currency': "TWD"
+								});
+								_etmc.push([
+									"trackEvent", 
+									{ "name" : "photo_failed_android", "content" : err }
+								]);
+							}	//end if
+
+							if( isIos() ){
+								fbq('trackCustom', 'scan', {
+									'event_category': 'photo_failed_ios',
+									'event_label': err,
+									'value': 0,
+									'currency': "TWD"
+								});
+								_etmc.push([
+									"trackEvent", 
+									{ "name" : "photo_failed_ios", "content" : err }
+								]);
+							}	//end if
+
+							// failure, handle it.
+							alert('照片中沒有偵測到QR Code，請再試一次。');
+							location.reload();
+							console.log(`Error scanning file. Reason: ${err}`)
+						});
+					});
+				});
+			}	//end if
+
+			if (window.matchMedia('(display-mode: standalone)').matches) {
+				$('.ss-add-app-block').hide();
+				$('#android-prompt-block').hide()
+				deferredPrompt = null;
+				htmlLogger('display-mode: standalone');
+			}	//end if
+
+			var getUrlParameter = function getUrlParameter(sParam) {
+				var sPageURL = window.location.search.substring(1),
+					sURLVariables = sPageURL.split('&'),
+					sParameterName,
+					i;
+
+				for (i = 0; i < sURLVariables.length; i++) {
+					sParameterName = sURLVariables[i].split('=');
+
+					if (sParameterName[0] === sParam) {
+						return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+					}
+				}	//end for
+				return false;
+			};
+			var poku = getUrlParameter('poku');
+			if( poku ){
+				document.getElementById("reader_results").style.visibility = "visible";
+			}	//end if
+
+			if( isInStandaloneMode() ){
+				$('.ss-add-app-block').hide();
+			}	//end if
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/svg-injector/1.1.3/svg-injector.min.js" integrity="sha512-LpKoEmPyokcDYSjRJ/7WgybgdAYFsKtCrGC9m+VBwcefe1vHXyUnD9fTQb3nXVJda6ny1J84UR+iBtEYm3OQmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		// Elements to inject
+		var mySVGsToInject = document.querySelectorAll('img.inject-me');
+
+		// Do the injection
+		SVGInjector(mySVGsToInject);
+	</script>
+</body>
+</html>
