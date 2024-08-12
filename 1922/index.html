@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156437372-4"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-156437372-4');
-	</script>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -331,19 +321,6 @@
 
 	<script type="text/javascript">
 		function line_share(){
-			gtag('event', 'click', {
-				'event_category': 'LINE分享',
-				'event_label': '',
-				'value': 1
-			});
-			fbq('trackCustom', 'click', {
-				'event_category': 'LINE分享',
-				'event_label': '',
-				'value': 1,
-				'currency': "TWD"
-			});
-			_etmc.push(["trackEvent", { "name" : "LINE分享" }]);
-
 			$line_share_text = "https://line.me/R/share?text="+
 				"在外停留越久，感染風險愈高!"+
 				"【幫幫長輩省點時間】 %0D%0A"+
@@ -413,19 +390,6 @@
 
 		function refresh(event_name){
 			$('#loading-indicator').show();
-			gtag('event', 'click', {
-				'event_category': event_name,
-				'event_label': '',
-				'value': 1
-			});
-			fbq('trackCustom', 'click', {
-				'event_category': event_name,
-				'event_label': '',
-				'value': 1,
-				'currency': "TWD"
-			});
-			_etmc.push(["trackEvent", { "name" : event_name }]);
-
 			window.location.reload();
 		}	//end function
 
@@ -438,19 +402,6 @@
 		}	//end function
 
 		function add_app(){
-			gtag('event', 'click', {
-				'event_category': '桌面捷徑',
-				'event_label': '',
-				'value': 1
-			});
-			fbq('trackCustom', 'click', {
-				'event_category': '桌面捷徑',
-				'event_label': '',
-				'value': 1,
-				'currency': "TWD"
-			});
-			_etmc.push(["trackEvent", { "name" : "桌面捷徑" }]);
-
 			// Checks if should display install popup notification:
 			if (isIos() && !isInStandaloneMode()) {
 				// this.setState({ showInstallMessage: true });
@@ -515,19 +466,6 @@
 		}	//end function
 
 		function onScanCompleted(qrCodeMessage) {
-			gtag('event', 'scan', {
-				'event_category': 'scan_success',
-				'event_label': qrCodeMessage,
-				'value': 1
-			});
-			fbq('trackCustom', 'scan', {
-				'event_category': 'scan_success',
-				'event_label': qrCodeMessage,
-				'value': 1,
-				'currency': "TWD"
-			});
-			_etmc.push(["trackEvent", { "name" : "scan_success", "content" : qrCodeMessage }]);
-
 			if( isAndroid() ){
 				fbq('trackCustom', 'scan', {
 					'event_category': 'scan_success_android',
@@ -571,19 +509,6 @@
 		}	//end if
 
 		function href_ga(uri, event_name) {
-			gtag('event', 'click', {
-				'event_category': event_name,
-				'event_label': uri,
-				'value': 1
-			});
-			fbq('trackCustom', 'click', {
-				'event_category': event_name,
-				'event_label': uri,
-				'value': 1,
-				'currency': "TWD"
-			});
-			_etmc.push(["trackEvent", { "name" : event_name }]);
-
 			window.location.href = uri;
 		}	//end function
 
@@ -685,19 +610,6 @@
 					{ facingMode: "environment" },
 					{ fps: 10 },
 					qrCodeMessage => {
-						gtag('event', 'scan', {
-							'event_category': 'camera_success',
-							'event_label': qrCodeMessage,
-							'value': 1
-						});
-						fbq('trackCustom', 'scan', {
-							'event_category': 'camera_success',
-							'event_label': qrCodeMessage,
-							'value': 1,
-							'currency': "TWD"
-						});
-						_etmc.push(["trackEvent", { "name" : "camera_success", "content" : qrCodeMessage }]);
-
 						if( isAndroid() ){
 							fbq('trackCustom', 'scan', {
 								'event_category': 'camera_success_android',
@@ -737,19 +649,6 @@
 						// console.log(`QR Code no longer in front of camera.`);
 					})
 				.catch(err => {
-					gtag('event', 'scan', {
-						'event_category': 'camera_failed',
-						'event_label': err,
-						'value': -1
-					});
-					fbq('trackCustom', 'scan', {
-						'event_category': 'camera_failed',
-						'event_label': err,
-						'value': 0,
-						'currency': "TWD"
-					});
-					_etmc.push(["trackEvent", { "name" : "camera_failed", "content" : err }]);
-
 					if( isAndroid() ){
 						$('#ss-android-camera-tip').show();
 						
@@ -787,13 +686,6 @@
 						// Scan QR Code
 						html5QrCode.scanFile(imageFile, true)
 						.then(qrCodeMessage => {
-							gtag('event', 'scan', {
-								'event_category': 'photo_success',
-								'event_label': qrCodeMessage,
-								'value': 1
-							});
-							_etmc.push(["trackEvent", { "name" : "photo_success", "content" : qrCodeMessage }]);
-
 							if( isAndroid() ){
 								fbq('trackCustom', 'scan', {
 									'event_category': 'photo_success_android',
@@ -827,22 +719,6 @@
 						})
 						.catch(err => {
 							error_handler(err, 'fileinput');
-
-							gtag('event', 'scan', {
-								'event_category': 'photo_failed',
-								'event_label': err,
-								'value': -1
-							});
-							fbq('trackCustom', 'scan', {
-								'event_category': 'photo_failed',
-								'event_label': err,
-								'value': 0,
-								'currency': "TWD"
-							});
-							_etmc.push([
-								"trackEvent", 
-								{ "name" : "photo_failed", "content" : err }
-							]);
 
 							if( isAndroid() ){
 								fbq('trackCustom', 'scan', {
